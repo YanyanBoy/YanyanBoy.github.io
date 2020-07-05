@@ -2074,19 +2074,19 @@ body {
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
       background: #eeeeeefe;
     }h1, h2, h3, h4, h5, h6 {
-      color: #555;
+      color: #d6336c;
     }
     
     .archive-timeline-title::before {
-      background-color: #555;
+      background-color: #d6336c;
     }
     
     .post-title-link::before {
-      background-color: #555;
+      background-color: #d6336c;
     }
     
     .node-title::before {
-      background-color: #555;
+      background-color: #d6336c;
     }a {
       color: #555;
     }
@@ -2110,24 +2110,23 @@ body {
     .next-md-body a:hover, .friends-box a:hover {
       color: #222;
       border-bottom-color: #222;
-    }
-    .nav-toggle .line {
-      background-color:  !important;
+    }.nav-toggle .line {
+      background-color: #74c0fc !important;
     }.nav-item a {
-        color: #555;
+        color: #f06595;
       }
       .nav-item-active a {
-        color: #555;
-        border-bottom: 1px solid #555 !important;
+        color: #f06595;
+        border-bottom: 1px solid #f06595 !important;
       }.nav-item a:hover {
         color: #222;
         border-bottom: 1px solid #222 !important;
       }.nav-item-active {
-      background: #f9f9f9fe;
+      background: #a5d8fffe;
     }
 
     .nav-item:hover {
-      background: #f9f9f9fe;
+      background: #a5d8fffe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2174,19 +2173,19 @@ body {
       background-color: #fffffffe;
     }
     .site-meta {
-      background: #000 !important;
+      background: #d0ebff !important;
     }
     .head-top-line {
-      background: #000;
+      background: #d0ebff;
     }
     .brand {
-      background: #000000fe;
+      background: #d0ebfffe;
     }
     .main-title, .brand {
-      color: #FFF !important;
+      color: #868e96 !important;
     }
     .mist .site-title i {
-      background: #FFFFFFfe;
+      background: #868e96fe;
     }.box-scale > #landlord {
       transform: scale(1);
     }body {
