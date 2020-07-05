@@ -2147,29 +2147,29 @@ body {
         left: auto !important;
       }
       .markdownIt-TOC a {
-      color: #eee;
-      border-bottom-color: #eee;
+      color: #faa2c1;
+      border-bottom-color: #faa2c1;
     }.markdownIt-TOC a:hover {
-      color: #f03e3e;
-      border-bottom-color: #f03e3e;
+      color: #e64980;
+      border-bottom-color: #e64980;
     }.active-current > a {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #fa5252 !important;
+      border-bottom-color: #fa5252 !important;
     }
     .sidebar-title-active {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #fa5252;
+      border-bottom-color: #fa5252;
     }
     .sidebar-title-item:hover {
-      color: #fc6423 !important;
+      color: #fa5252 !important;
     }
     .active-show > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #fa5252;
+      border-bottom-color: #fa5252;
     }
     .active-hidden > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #fa5252;
+      border-bottom-color: #fa5252;
     }.bg-color {
       background-color: #fffffffe;
     }
@@ -2187,8 +2187,8 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
-    }.box-shadow-wrapper {
-      box-shadow: none !important;
+    }.box-scale > #landlord {
+      transform: scale(1);
     }body {
       cursor: default;
     }a {
