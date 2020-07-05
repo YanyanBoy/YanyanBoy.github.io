@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
+<meta name="keywords" content="静态个人博客">
 <meta name="description" content="温故而知新。">
-<meta name="theme-color" content="#000">
+<meta name="theme-color" content="#d0ebff">
 <title>Gridea | YanBlog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1593964533987">
-<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="shortcut icon" href="/favicon.ico?v=1593964755489">
+<link rel="stylesheet" href="/media/css/muse.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -28,11 +28,25 @@
   integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
+      processHtmlClass: 'tex2jax_process'
+    },
+    //禁用右键菜单	
+    renderActions: {
+      addMenu: [0, '', '']
+    }
+  };
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 
@@ -46,9 +60,9 @@
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="gemini">
-  <header class="header  ">
-    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+<div class="muse">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper  " id="header">
       <div class="nav-toggle" id="nav_toggle">
         <div class="toggle-box">
           <div class="line line-top"></div>
@@ -65,7 +79,7 @@
           
         </div>
         
-          <p class="subtitle">精于心，简于形</p>
+          <p class="subtitle">夏天的风 正暖暖吹过</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -78,9 +92,11 @@
             <li class="nav-item ">
               
               
-                <a href="/" target="_self">
-                  <i class="fa fa-home"></i> 首页
-                </a>
+                
+                  <a href="/" target="_self">
+                    <i class="fa fa-home"></i> 首页
+                  </a>
+                
               
             </li>
           
@@ -91,9 +107,11 @@
             <li class="nav-item ">
               
               
-                <a href="/archives/" target="_self">
-                  <i class="fa fa-archive"></i> 归档
-                </a>
+                
+                  <a href="/archives/" target="_self">
+                    <i class="fa fa-archive"></i> 归档
+                  </a>
+                
               
             </li>
           
@@ -104,9 +122,11 @@
             <li class="nav-item ">
               
               
-                <a href="/tags/" target="_self">
-                  <i class="fa fa-tags"></i> 标签
-                </a>
+                
+                  <a href="/tags/" target="_self">
+                    <i class="fa fa-tags"></i> 标签
+                  </a>
+                
               
             </li>
           
@@ -117,9 +137,11 @@
             <li class="nav-item ">
               
               
-                <a href="/post/about/" target="_self">
-                  <i class="fa fa-user"></i> 关于
-                </a>
+                
+                  <a href="/post/about/" target="_self">
+                    <i class="fa fa-user"></i> 关于
+                  </a>
+                
               
             </li>
           
@@ -172,13 +194,13 @@
   <div class="main-continer">
     
     <div
-      class="section-layout gemini ">
+      class="section-layout muse bg-color">
       <div class="section-layout-wrapper">
         
 
 <div class="sidebar">
   
-    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+    <div class="sidebar-box box-shadow-wrapper  right-motion" id="sidebar">
       
         <div class="post-list-sidebar">
           <div class="sidebar-title">
@@ -187,14 +209,20 @@
           </div>
         </div>
       
-      <div class="sidebar-body gemini" id="sidebar_body">
+      <div class="sidebar-body muse" id="sidebar_body">
         
           
             
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+<div class="sidebar-wrapper box-shadow-wrapper ">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">适用 Gemini,Pisces 布局,版权说明需配置</p>
+    <p class="site-author-name">Yan</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">帅气可爱的小严博客！</p>
+      
+    </div>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -218,8 +246,6 @@
       </a>
     </div>
   </div>
-  
-    
   
   
 
@@ -360,7 +386,7 @@
   <ul class="post-copyright">
     <li class="post-copyright-author">
       <strong class="language" data-lan="author">本文作者：</strong>
-      适用 Gemini,Pisces 布局,版权说明需配置
+      Yan
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
@@ -430,12 +456,14 @@
   </footer>
   
   
-  <div class="gemini back-to-top" id="back_to_top">
+  <div class="drawer-box right" id="drawer_box">
+    <span class="muse-line muse-line-first"></span>
+    <span class="muse-line muse-line-middle"></span>
+    <span class="muse-line muse-line-last"></span>
+  </div>
+  
+  <div class="muse back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
-    
-    <span class="scrollpercent">
-      <span id="back_to_top_text">0</span>%
-    </span>
     
   </div>
   
@@ -569,7 +597,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'false'
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -1181,7 +1209,13 @@
 </script>
 
 
+<script src="/media/js/mouse/love.js"></script>
 
 
+<script src="/media/js/cool.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>
 
 </html>
