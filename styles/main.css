@@ -2052,7 +2052,7 @@ p > code {
   }
 }
 body {
-      background-color: #fcc2d7;
+      background-color: #ffdeeb;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2110,9 +2110,8 @@ body {
     .next-md-body a:hover, .friends-box a:hover {
       color: #faa2c1;
       border-bottom-color: #faa2c1;
-    }
-    .nav-toggle .line {
-      background-color:  !important;
+    }.nav-toggle .line {
+      background-color: #f3d9fa !important;
     }.nav-item a {
         color: #f783ac;
       }
