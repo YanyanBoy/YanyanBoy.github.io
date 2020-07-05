@@ -2112,15 +2112,11 @@ body {
       border-bottom-color: #faa2c1;
     }.nav-toggle .line {
       background-color: #f3d9fa !important;
-    }.nav-item a {
-        color: #f783ac;
-      }
-      .nav-item-active a {
-        color: #f783ac;
-        border-bottom: 1px solid #f783ac !important;
+    }
+      .nav-item a {
+        color:  #f783ac;
       }.nav-item a:hover {
         color: #f06595;
-        border-bottom: 1px solid #f06595 !important;
       }.nav-item-active {
       background: #ffdeebfe;
     }
@@ -2137,15 +2133,14 @@ body {
       transition-property: all;
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
-    }.muse .sidebar, .mist .sidebar {
-        right: 0 !important;
-        left: auto !important;
+    }.pisces .blog-header, .gemini .blog-header {
+        right: 0;
       }
-      .drawer-box {
-        right: 30px !important;
-        left: auto !important;
-      }
-      .markdownIt-TOC a {
+      .pisces .section-layout-wrapper, .gemini .section-layout-wrapper {
+        flex-direction: row-reverse !important;
+      }.pisces .sidebar, .gemini .sidebar {
+        right: 0;
+      }.markdownIt-TOC a {
       color: #fcc2d7;
       border-bottom-color: #fcc2d7;
     }.markdownIt-TOC a:hover {
