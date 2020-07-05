@@ -2072,7 +2072,7 @@ body {
       border-bottom-color: #f783ac;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #eeeeeefe;
+      background: #faa2c1fe;
     }h1, h2, h3, h4, h5, h6 {
       color: #fa5252;
     }
@@ -2168,21 +2168,21 @@ body {
       background-color: #ffdeebfe;
     }
     .site-meta {
-      background: #d0ebff !important;
+      background: #fff0f6 !important;
     }
     .head-top-line {
-      background: #d0ebff;
+      background: #fff0f6;
     }
     .brand {
-      background: #d0ebfffe;
+      background: #fff0f6fe;
     }
     .main-title, .brand {
-      color: #dbe4ff !important;
+      color: #d0bfff !important;
     }
     .mist .site-title i {
-      background: #dbe4fffe;
-    }.box-shadow-wrapper {
-      box-shadow: none !important;
+      background: #d0bffffe;
+    }.box-scale > #landlord {
+      transform: scale(1);
     }body {
       cursor: default;
     }a {
