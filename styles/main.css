@@ -2052,7 +2052,7 @@ p > code {
   }
 }
 body {
-      background-color: #ffdeeb;
+      background-color: #fff5f5;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2169,22 +2169,22 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #e9eceffe;
+      background-color: #ced4dafe;
     }
     .site-meta {
-      background: #fff0f6 !important;
+      background: #fff5f5 !important;
     }
     .head-top-line {
-      background: #fff0f6;
+      background: #fff5f5;
     }
     .brand {
       background: #dee2e6fe;
     }
     .main-title, .brand {
-      color: #d0bfff !important;
+      color: #f03e3e !important;
     }
     .mist .site-title i {
-      background: #d0bffffe;
+      background: #f03e3efe;
     }.box-scale > #landlord {
       transform: scale(1);
     }body {
