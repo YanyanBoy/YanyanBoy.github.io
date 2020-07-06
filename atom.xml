@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>Yan&apos;s  blog</title>
-    <updated>2020-07-06T01:56:47.742Z</updated>
+    <updated>2020-07-06T02:06:29.612Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -10,21 +10,6 @@
     <logo>https://iuyan.cn/images/avatar.png</logo>
     <icon>https://iuyan.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, Yan&apos;s  blog</rights>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://iuyan.cn/post/guan-yu/</id>
-        <link href="https://iuyan.cn/post/guan-yu/">
-        </link>
-        <updated>2020-07-06T01:55:47.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站-记录生活记录成长记录学习的个人网站哈哈">🏠 关于本站     记录生活，记录成长，记录学习的个人网站，哈哈😎</h2>
-<h2 id="博主是谁-博主当然是可爱帅气的小严同学">👨‍💻 博主是谁    博主当然是可爱帅气的小严同学！😏</h2>
-<h2 id="兴趣爱好-足球-动漫-️">⛹ 兴趣爱好     足球、动漫。⚽️</h2>
-<h2 id="联系我呀-嘻嘻">📬 联系我呀    嘻嘻。😝</h2>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[2020.7.5]]></title>
         <id>https://iuyan.cn/post/11111/</id>
