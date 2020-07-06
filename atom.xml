@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
-    <title>Yan&apos;s  blog</title>
-    <updated>2020-07-06T04:22:34.519Z</updated>
+    <title>iu❤yan</title>
+    <updated>2020-07-06T04:46:45.722Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
     <subtitle>温故而知新。</subtitle>
     <logo>https://iuyan.cn/images/avatar.png</logo>
     <icon>https://iuyan.cn/favicon.ico</icon>
-    <rights>All rights reserved 2020, Yan&apos;s  blog</rights>
+    <rights>All rights reserved 2020, iu❤yan</rights>
     <entry>
         <title type="html"><![CDATA[2020.7.5]]></title>
         <id>https://iuyan.cn/post/o3CXyYpjl/</id>
