@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>iu❤yan</title>
-    <updated>2020-07-07T17:13:25.747Z</updated>
+    <updated>2020-07-07T17:24:51.008Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -247,10 +247,16 @@ Markdown 脚注的格式如下:<br>
 ![alt 属性文本](图片地址 &quot;可选标题&quot;)
 </code></pre>
 <ul>
-<li>开头一个感叹号 !</li>
-<li>接着一个方括号，里面放上图片的替代文字</li>
-<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。<br>
-<img src="http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html" alt="图片" title="图片" loading="lazy"></li>
+<li>
+<p>开头一个感叹号 !</p>
+</li>
+<li>
+<p>接着一个方括号，里面放上图片的替代文字</p>
+</li>
+<li>
+<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。</p>
+<p><code>![图片](http://tupian.baike.com/ipad/ a1_05_00_01300000194285122188000535877_jpg.html &quot;图片&quot;)</code></p>
+</li>
 </ul>
 <p>效果：<br>
 <img src="http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html" alt="图片" loading="lazy"><br>
@@ -331,6 +337,8 @@ _   下划线
 .   英文句点
 !   感叹号
 </code></pre>
+<h2 id="19总结">1.9.总结</h2>
+<p>原来网页上面的排版格式是这样写的啊！长见识了长见识了，哈哈哈。而这上面的就是我目前掌握的一些基本的常用的排版格式，还有好多高级用法我没有掌握呢😢😢。加油吧！至少现在写博客的格式我是掌握了哈哈哈哈。。。。。。😁😁😁😁😁😁</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
