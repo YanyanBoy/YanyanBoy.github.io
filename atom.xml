@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>iu❤yan</title>
-    <updated>2020-07-07T04:30:50.070Z</updated>
+    <updated>2020-07-07T09:49:24.674Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://iuyan.cn/images/avatar.png</logo>
     <icon>https://iuyan.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, iu❤yan</rights>
+    <entry>
+        <title type="html"><![CDATA[markdown教程（简单版）]]></title>
+        <id>https://iuyan.cn/post/bu7zwcfmG/</id>
+        <link href="https://iuyan.cn/post/bu7zwcfmG/">
+        </link>
+        <updated>2020-07-07T09:11:22.000Z</updated>
+        <content type="html"><![CDATA[<p>#1.目录：<br>
+1.1.标题<br>
+1.1.1.= 和 - 标记语法格式如下：<br>
+我展示的是一级标题<br>
+============<br>
+我展示的是二级标题<br>
+---------------------<br>
+1.1.2.使用 # 号标记</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.7.5]]></title>
         <id>https://iuyan.cn/post/o3CXyYpjl/</id>
