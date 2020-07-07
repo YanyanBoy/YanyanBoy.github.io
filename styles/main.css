@@ -2117,7 +2117,7 @@ p > code {
       color: #faa2c1;
       border-bottom-color: #faa2c1;
     }.nav-toggle .line {
-      background-color: #f3d9fa !important;
+      background-color: #7950f2 !important;
     }
       .nav-item a {
         color:  #f783ac;
@@ -2147,29 +2147,29 @@ p > code {
       }.pisces .sidebar, .gemini .sidebar {
         right: 0;
       }.markdownIt-TOC a {
-      color: #fcc2d7;
-      border-bottom-color: #fcc2d7;
+      color: #f06595;
+      border-bottom-color: #f06595;
     }.markdownIt-TOC a:hover {
-      color: #fcc2d7;
-      border-bottom-color: #fcc2d7;
+      color: #f06595;
+      border-bottom-color: #f06595;
     }.active-current > a {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #f06595 !important;
+      border-bottom-color: #f06595 !important;
     }
     .sidebar-title-active {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #f06595;
+      border-bottom-color: #f06595;
     }
     .sidebar-title-item:hover {
-      color: #fc6423 !important;
+      color: #f06595 !important;
     }
     .active-show > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #f06595;
+      border-bottom-color: #f06595;
     }
     .active-hidden > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #f06595;
+      border-bottom-color: #f06595;
     }.bg-color {
       background-color: #f8f9faba;
     }
