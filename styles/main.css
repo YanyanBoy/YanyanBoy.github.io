@@ -2078,7 +2078,7 @@ p > code {
       border-bottom-color: #f06595;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #faa2c1d8;
+      background: #faa2c1bf;
     }h1, h2, h3, h4, h5, h6 {
       color: #fa5252;
     }
@@ -2124,11 +2124,11 @@ p > code {
       }.nav-item a:hover {
         color: #f06595;
       }.nav-item-active {
-      background: #f1f3f5d8;
+      background: #f1f3f5bf;
     }
 
     .nav-item:hover {
-      background: #f1f3f5d8;
+      background: #f1f3f5bf;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2171,7 +2171,7 @@ p > code {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #f8f9fad8;
+      background-color: #f8f9fabf;
     }
     .site-meta {
       background: #f783ac !important;
@@ -2180,13 +2180,13 @@ p > code {
       background: #f783ac;
     }
     .brand {
-      background: #f783acd8;
+      background: #f783acbf;
     }
     .main-title, .brand {
       color: #f03e3e !important;
     }
     .mist .site-title i {
-      background: #f03e3ed8;
+      background: #f03e3ebf;
     }.bg-img img {
         filter: blur(4px)
       }.box-scale > #landlord {
