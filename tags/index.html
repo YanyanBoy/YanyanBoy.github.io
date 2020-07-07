@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新。">
 <meta name="theme-color" content="#f783ac">
 <title>iu❤yan</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1594140089807">
+<link rel="shortcut icon" href="/favicon.ico?v=1594142003064">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -560,9 +560,6 @@
 我展示的是二级标题  
 ---------------------  
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;效果我展示的是一级标题&#34;&gt;效果：&lt;br&gt;
-我展示的是一级标题&lt;/h1&gt;
-&lt;h2 id=&#34;我展示的是二级标题&#34;&gt;我展示的是二级标题&lt;/h2&gt;
 &lt;h3 id=&#34;112使用-号标记&#34;&gt;1.1.2.使用 # 号标记&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# 一级标题
 ## 二级标题
@@ -571,13 +568,6 @@
 ##### 五级标题
 ###### 六级标题
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;效果：&lt;/p&gt;
-&lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;
-&lt;h2 id=&#34;二级标题&#34;&gt;二级标题&lt;/h2&gt;
-&lt;h3 id=&#34;三级标题&#34;&gt;三级标题&lt;/h3&gt;
-&lt;h4 id=&#34;四级标题&#34;&gt;四级标题&lt;/h4&gt;
-&lt;h5 id=&#34;五级标题&#34;&gt;五级标题&lt;/h5&gt;
-&lt;h6 id=&#34;六级标题&#34;&gt;六级标题&lt;/h6&gt;
 &lt;h2 id=&#34;12段落格式&#34;&gt;1.2.段落格式&lt;/h2&gt;
 &lt;p&gt;段落的换行是使用两个以上空格加上回车。&lt;br&gt;
 当然也可以在段落后面使用一个空行来表示重新开始一个段落。&lt;/p&gt;
@@ -685,7 +675,7 @@ Markdown 脚注的格式如下:&lt;br&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;14markdown-区块&#34;&gt;1.4.Markdown 区块&lt;/h2&gt;
+&lt;h2 id=&#34;14-区块&#34;&gt;1.4. 区块&lt;/h2&gt;
 &lt;h3 id=&#34;141markdown-区块引用是在段落开头使用-符号-然后后面紧跟一个空格符号&#34;&gt;1.4.1Markdown 区块引用是在段落开头使用 &lt;code&gt;&amp;gt;&lt;/code&gt;符号 ，然后后面紧跟一个空格符号：&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;gt; 区块引用&lt;/code&gt;&lt;br&gt;
 效果：&lt;/p&gt;
@@ -762,18 +752,121 @@ Markdown 脚注的格式如下:&lt;br&gt;
 });
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;16markdown-链接&#34;&gt;1.6.Markdown 链接&lt;/h2&gt;
-&lt;p&gt;链接使用方法如下：&lt;/p&gt;
+&lt;h3 id=&#34;161链接使用方法如下&#34;&gt;1.6.1链接使用方法如下：&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;[链接名称](链接地址)
 或者
 &amp;lt;链接地址&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;例如：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;百度链接：[百度]（www.baidu.com）
-&amp;lt;www.baidu.com&amp;gt;
+&lt;pre&gt;&lt;code&gt;百度链接：[百度]（https://www.baidu.com）
+&amp;lt;https://www.baidu.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示结果如下：&lt;br&gt;
+百度链接： [百度]（https://www.baidu.com）&lt;br&gt;
+&lt;a href=&#34;https://www.baidu.com&#34;&gt;https://www.baidu.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;162高级链接&#34;&gt;1.6.2.高级链接&lt;/h3&gt;
+&lt;p&gt;我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这个链接用 1 作为网址变量 [Google][1]
+这个链接用 baidu 作为网址变量 [Baidu[baidu]
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://www.google.com/
+[baidu]: http://www.baidu.com/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;显示结果如下：&lt;/p&gt;
-&lt;p&gt;百度链接：[百度]（www.baidu.com）&lt;br&gt;
-&amp;lt;www.baidu.com&amp;gt;&lt;/p&gt;
+&lt;p&gt;这个链接用 1 作为网址变量 &lt;a href=&#34;http://www.google.com/&#34;&gt;Google&lt;/a&gt;&lt;br&gt;
+这个链接用 baidu 作为网址变量 &lt;a href=&#34;http://www.baidu.com/&#34;&gt;Baidu&lt;/a&gt;&lt;br&gt;
+然后在文档的结尾为变量赋值（网址）&lt;/p&gt;
+&lt;h2 id=&#34;17-图片和链接使用方法基本差不多就是前面多了个&#34;&gt;1.7. 图片（和链接使用方法基本差不多，就是前面多了个 &lt;code&gt;!&lt;/code&gt;）&lt;/h2&gt;
+&lt;p&gt;Markdown 图片语法格式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![alt 属性文本](图片地址)
+![alt 属性文本](图片地址 &amp;quot;可选标题&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;开头一个感叹号 !&lt;/li&gt;
+&lt;li&gt;接着一个方括号，里面放上图片的替代文字&lt;/li&gt;
+&lt;li&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。&lt;br&gt;
+&lt;img src=&#34;http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html&#34; alt=&#34;图片&#34; title=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;效果：&lt;br&gt;
+&lt;img src=&#34;http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&amp;lt;--网图，侵权删！--&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;17表格&#34;&gt;1.7.表格&lt;/h2&gt;
+&lt;p&gt;Markdown 制作表格使用 &lt;code&gt;|&lt;/code&gt;来分隔不同的单元格，使用 &lt;code&gt;-&lt;/code&gt; 来分隔表头和其他行。&lt;br&gt;
+语法格式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;我们可以设置表格的对齐方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-: 设置内容和标题栏居右对齐。&lt;/li&gt;
+&lt;li&gt;:- 设置内容和标题栏居左对齐。&lt;/li&gt;
+&lt;li&gt;:-: 设置内容和标题栏居中对齐。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;左对齐&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;右对齐&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;居中对齐&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;18特殊符号处理&#34;&gt;1.8.特殊符号处理&lt;/h2&gt;
+&lt;p&gt;Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+&lt;/code&gt;&lt;/pre&gt;
 &lt;hr class=&#34;footnotes-sep&#34;&gt;
 &lt;section class=&#34;footnotes&#34;&gt;
 &lt;ol class=&#34;footnotes-list&#34;&gt;

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>iu❤yan</title>
-    <updated>2020-07-07T16:41:33.991Z</updated>
+    <updated>2020-07-07T17:13:25.747Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -24,9 +24,6 @@
 我展示的是二级标题  
 ---------------------  
 </code></pre>
-<h1 id="效果我展示的是一级标题">效果：<br>
-我展示的是一级标题</h1>
-<h2 id="我展示的是二级标题">我展示的是二级标题</h2>
 <h3 id="112使用-号标记">1.1.2.使用 # 号标记</h3>
 <pre><code># 一级标题
 ## 二级标题
@@ -35,13 +32,6 @@
 ##### 五级标题
 ###### 六级标题
 </code></pre>
-<p>效果：</p>
-<h1 id="一级标题">一级标题</h1>
-<h2 id="二级标题">二级标题</h2>
-<h3 id="三级标题">三级标题</h3>
-<h4 id="四级标题">四级标题</h4>
-<h5 id="五级标题">五级标题</h5>
-<h6 id="六级标题">六级标题</h6>
 <h2 id="12段落格式">1.2.段落格式</h2>
 <p>段落的换行是使用两个以上空格加上回车。<br>
 当然也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
@@ -149,7 +139,7 @@ Markdown 脚注的格式如下:<br>
 </ul>
 </li>
 </ol>
-<h2 id="14markdown-区块">1.4.Markdown 区块</h2>
+<h2 id="14-区块">1.4. 区块</h2>
 <h3 id="141markdown-区块引用是在段落开头使用-符号-然后后面紧跟一个空格符号">1.4.1Markdown 区块引用是在段落开头使用 <code>&gt;</code>符号 ，然后后面紧跟一个空格符号：</h3>
 <p><code>&gt; 区块引用</code><br>
 效果：</p>
@@ -226,18 +216,121 @@ Markdown 脚注的格式如下:<br>
 });
 </code></pre>
 <h2 id="16markdown-链接">1.6.Markdown 链接</h2>
-<p>链接使用方法如下：</p>
+<h3 id="161链接使用方法如下">1.6.1链接使用方法如下：</h3>
 <pre><code>[链接名称](链接地址)
 或者
 &lt;链接地址&gt;
 </code></pre>
 <p>例如：</p>
-<pre><code>百度链接：[百度]（www.baidu.com）
-&lt;www.baidu.com&gt;
+<pre><code>百度链接：[百度]（https://www.baidu.com）
+&lt;https://www.baidu.com&gt;
+</code></pre>
+<p>显示结果如下：<br>
+百度链接： [百度]（https://www.baidu.com）<br>
+<a href="https://www.baidu.com">https://www.baidu.com</a></p>
+<h3 id="162高级链接">1.6.2.高级链接</h3>
+<p>我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</p>
+<pre><code>这个链接用 1 作为网址变量 [Google][1]
+这个链接用 baidu 作为网址变量 [Baidu[baidu]
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://www.google.com/
+[baidu]: http://www.baidu.com/
 </code></pre>
 <p>显示结果如下：</p>
-<p>百度链接：[百度]（www.baidu.com）<br>
-&lt;www.baidu.com&gt;</p>
+<p>这个链接用 1 作为网址变量 <a href="http://www.google.com/">Google</a><br>
+这个链接用 baidu 作为网址变量 <a href="http://www.baidu.com/">Baidu</a><br>
+然后在文档的结尾为变量赋值（网址）</p>
+<h2 id="17-图片和链接使用方法基本差不多就是前面多了个">1.7. 图片（和链接使用方法基本差不多，就是前面多了个 <code>!</code>）</h2>
+<p>Markdown 图片语法格式如下：</p>
+<pre><code>![alt 属性文本](图片地址)
+![alt 属性文本](图片地址 &quot;可选标题&quot;)
+</code></pre>
+<ul>
+<li>开头一个感叹号 !</li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。<br>
+<img src="http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html" alt="图片" title="图片" loading="lazy"></li>
+</ul>
+<p>效果：<br>
+<img src="http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html" alt="图片" loading="lazy"><br>
+&lt;--网图，侵权删！--&gt;</p>
+<h2 id="17表格">1.7.表格</h2>
+<p>Markdown 制作表格使用 <code>|</code>来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行。<br>
+语法格式如下：</p>
+<pre><code>|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+</code></pre>
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody>
+</table>
+<p>我们可以设置表格的对齐方式：</p>
+<ul>
+<li>-: 设置内容和标题栏居右对齐。</li>
+<li>:- 设置内容和标题栏居左对齐。</li>
+<li>:-: 设置内容和标题栏居中对齐。</li>
+</ul>
+<p>比如：</p>
+<pre><code>| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+</code></pre>
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+</tbody>
+</table>
+<h2 id="18特殊符号处理">1.8.特殊符号处理</h2>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<pre><code>\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+</code></pre>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
