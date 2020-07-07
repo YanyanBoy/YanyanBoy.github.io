@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>iu❤yan</title>
-    <updated>2020-07-07T17:35:41.219Z</updated>
+    <updated>2020-07-07T17:40:33.188Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -346,7 +346,25 @@ _   下划线
 .   英文句点
 !   感叹号
 </code></pre>
-<h2 id="19总结">1.9.总结</h2>
+<p>##1.9.任务小清单</p>
+<ul>
+<li>空格[ ] 未勾选</li>
+<li>空格[x] 内容 已勾选（这是小写x）<br>
+[]后面加空格再加内容<br>
+如：<pre><code>- [x] 学习了高数
+- [x] 写了博客
+- [ ] 写了大物
+</code></pre>
+</li>
+</ul>
+<p>这个要先转义一下-，否则会当成无序列表<br>
+显示结果：</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8960846"><label class="task-list-item-label" for="task-item-8960846"> 学习了高数</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4496425"><label class="task-list-item-label" for="task-item-4496425"> 写了博客</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7157279"><label class="task-list-item-label" for="task-item-7157279"> 写了大物</label></li>
+</ul>
+<h2 id="20总结">2.0.总结</h2>
 <p>原来网页上面的排版格式是这样写的啊！长见识了长见识了，哈哈哈。而这上面的就是我目前掌握的一些基本的常用的排版格式，还有好多高级用法我没有掌握呢😢😢。加油吧！至少现在写博客的格式我是掌握了哈哈哈哈。。。。。。😁😁😁😁😁😁</p>
 <hr>
 <p>知识的来源：<br>
