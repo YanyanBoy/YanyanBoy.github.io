@@ -2052,7 +2052,7 @@ p > code {
   }
 }
 body {
-      background-color: #fff5f5;
+      background-color: #e9ecef;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2064,7 +2064,7 @@ body {
       }
     
     .post-body {
-      font-size: 20px !important
+      font-size: 15px !important
     }
     body {
       color: #f783ac;
@@ -2169,16 +2169,16 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #fff5f5fe;
+      background-color: #e9eceffe;
     }
     .site-meta {
-      background: #ffe3e3 !important;
+      background: #f783ac !important;
     }
     .head-top-line {
-      background: #ffe3e3;
+      background: #f783ac;
     }
     .brand {
-      background: #ffe3e3fe;
+      background: #f06595fe;
     }
     .main-title, .brand {
       color: #f03e3e !important;
@@ -2186,9 +2186,11 @@ body {
     .mist .site-title i {
       background: #f03e3efe;
     }.bg-img img {
-        filter: blur(5px)
+        filter: blur(4px)
       }.box-scale > #landlord {
       transform: scale(1);
+    }.box-shadow-wrapper {
+      box-shadow: none !important;
     }body {
       cursor: default;
     }a {
