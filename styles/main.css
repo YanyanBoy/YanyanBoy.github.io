@@ -2188,7 +2188,7 @@ p > code {
     .mist .site-title i {
       background: #f03e3ea5;
     }.bg-img img {
-        filter: blur(4px)
+        filter: blur(0px)
       }.box-scale > #landlord {
       transform: scale(1);
     }.box-shadow-wrapper {
