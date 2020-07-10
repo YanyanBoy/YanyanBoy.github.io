@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iuyan.cn</id>
     <title>iu❤yan</title>
-    <updated>2020-07-10T09:05:24.206Z</updated>
+    <updated>2020-07-10T09:11:11.412Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iuyan.cn"/>
     <link rel="self" href="https://iuyan.cn/atom.xml"/>
@@ -19,67 +19,66 @@
         <summary type="html"><![CDATA[<h2 id="前言">前言</h2>
 <p>进入大学之后，有着许多想做的事，有着许多想完成的目标，现在我就将他们陈列出来（这些目标都是暂时能想到的，以后再慢慢加，哈哈哈），希望在大学毕业的那一天，我可以回过头，瞧一瞧曾经所期望的自己，自己有没有做到。（每一学期更一次这篇博客）💪</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1947585"><label class="task-list-item-label" for="task-item-1947585"> 代表着完成</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8295396"><label class="task-list-item-label" for="task-item-8295396"> 代表着未完成</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7281324"><label class="task-list-item-label" for="task-item-7281324"> 代表着完成</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7758158"><label class="task-list-item-label" for="task-item-7758158"> 代表着未完成</label></li>
 </ul>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="前言">前言</h2>
 <p>进入大学之后，有着许多想做的事，有着许多想完成的目标，现在我就将他们陈列出来（这些目标都是暂时能想到的，以后再慢慢加，哈哈哈），希望在大学毕业的那一天，我可以回过头，瞧一瞧曾经所期望的自己，自己有没有做到。（每一学期更一次这篇博客）💪</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8857038"><label class="task-list-item-label" for="task-item-8857038"> 代表着完成</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9289072"><label class="task-list-item-label" for="task-item-9289072"> 代表着未完成</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3747586"><label class="task-list-item-label" for="task-item-3747586"> 代表着完成</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1748505"><label class="task-list-item-label" for="task-item-1748505"> 代表着未完成</label></li>
 </ul>
 <!-- more -->
 <hr>
 <h2 id="学习篇">学习篇📖</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6191512"><label class="task-list-item-label" for="task-item-6191512"> 拿一次一等奖学金</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5867881"><label class="task-list-item-label" for="task-item-5867881"> 拿一次特等奖学金</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4935086"><label class="task-list-item-label" for="task-item-4935086"> 拿一次国家奖学金</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1335602"><label class="task-list-item-label" for="task-item-1335602"> 拿一次三好学生</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7601102"><label class="task-list-item-label" for="task-item-7601102"> 成绩考一次班上第一</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4634885"><label class="task-list-item-label" for="task-item-4634885"> 成绩考一次专业第一</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2707927"><label class="task-list-item-label" for="task-item-2707927"> 参加一次省赛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4226741"><label class="task-list-item-label" for="task-item-4226741"> 拿一次省级奖</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7330640"><label class="task-list-item-label" for="task-item-7330640"> 参加一次国赛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2183736"><label class="task-list-item-label" for="task-item-2183736"> 拿一次国奖</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9864648"><label class="task-list-item-label" for="task-item-9864648"> 做一个贪吃蛇小游戏</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4412792"><label class="task-list-item-label" for="task-item-4412792"> 做一个坦克大战小游戏</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1745308"><label class="task-list-item-label" for="task-item-1745308"> 做一个网页</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9686502"><label class="task-list-item-label" for="task-item-9686502"> 自己独立做一个网页主题</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-865624"><label class="task-list-item-label" for="task-item-865624"> 自己独立做一个小程序</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7490045"><label class="task-list-item-label" for="task-item-7490045"> 考过英语四级</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4850690"><label class="task-list-item-label" for="task-item-4850690"> 考过英语六级</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6460137"><label class="task-list-item-label" for="task-item-6460137"> 成为党员</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5968058"><label class="task-list-item-label" for="task-item-5968058"> 不挂科</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3556070"><label class="task-list-item-label" for="task-item-3556070"> 学会驾照</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3641212"><label class="task-list-item-label" for="task-item-3641212"> 能拆一次电脑然后自己将它装好</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3104713"><label class="task-list-item-label" for="task-item-3104713"> 能去大公司实习</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9427279"><label class="task-list-item-label" for="task-item-9427279"> 能考研成功</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7233828"><label class="task-list-item-label" for="task-item-7233828"> 拿一次一等奖学金</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1759861"><label class="task-list-item-label" for="task-item-1759861"> 拿一次特等奖学金</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8567942"><label class="task-list-item-label" for="task-item-8567942"> 拿一次国家奖学金</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6490068"><label class="task-list-item-label" for="task-item-6490068"> 拿一次三好学生</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3821764"><label class="task-list-item-label" for="task-item-3821764"> 成绩考一次班上第一</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5925480"><label class="task-list-item-label" for="task-item-5925480"> 成绩考一次专业第一</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8046111"><label class="task-list-item-label" for="task-item-8046111"> 参加一次省赛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9357989"><label class="task-list-item-label" for="task-item-9357989"> 拿一次省级奖</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-675924"><label class="task-list-item-label" for="task-item-675924"> 参加一次国赛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1267583"><label class="task-list-item-label" for="task-item-1267583"> 拿一次国奖</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5124979"><label class="task-list-item-label" for="task-item-5124979"> 做一个贪吃蛇小游戏</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-729976"><label class="task-list-item-label" for="task-item-729976"> 做一个坦克大战小游戏</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2028413"><label class="task-list-item-label" for="task-item-2028413"> 做一个网页</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7795951"><label class="task-list-item-label" for="task-item-7795951"> 自己独立做一个网页主题</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1299037"><label class="task-list-item-label" for="task-item-1299037"> 自己独立做一个小程序</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7622286"><label class="task-list-item-label" for="task-item-7622286"> 考过英语四级</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9173710"><label class="task-list-item-label" for="task-item-9173710"> 考过英语六级</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2031850"><label class="task-list-item-label" for="task-item-2031850"> 成为党员</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2038928"><label class="task-list-item-label" for="task-item-2038928"> 不挂科</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4525876"><label class="task-list-item-label" for="task-item-4525876"> 学会驾照</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7507457"><label class="task-list-item-label" for="task-item-7507457"> 能拆一次电脑然后自己将它装好</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2273392"><label class="task-list-item-label" for="task-item-2273392"> 能去大公司实习</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5020150"><label class="task-list-item-label" for="task-item-5020150"> 能考研成功</label></li>
 </ul>
 <h2 id="生活篇️">生活篇⚽️</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3352190"><label class="task-list-item-label" for="task-item-3352190"> 在球场上能跑满全场不被换下</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5931090"><label class="task-list-item-label" for="task-item-5931090"> 成为院队的一员</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7797875"><label class="task-list-item-label" for="task-item-7797875"> 能和球队一起获得奖项</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3615366"><label class="task-list-item-label" for="task-item-3615366"> 成为足球队队长</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8665900"><label class="task-list-item-label" for="task-item-8665900"> 能去现场看一次国足比赛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6296754"><label class="task-list-item-label" for="task-item-6296754"> 能去奥体中心看一次重庆力帆比赛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-488250"><label class="task-list-item-label" for="task-item-488250"> 能去看一次巴萨队的比赛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5414611"><label class="task-list-item-label" for="task-item-5414611"> 能跑完一次半马</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3748547"><label class="task-list-item-label" for="task-item-3748547"> 能学会游泳</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6286616"><label class="task-list-item-label" for="task-item-6286616"> 能去峨眉山（黄山）看一次日出</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6828551"><label class="task-list-item-label" for="task-item-6828551"> 能去大西北甘肃逛一逛</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3761580"><label class="task-list-item-label" for="task-item-3761580"> 能去云南瞧一瞧</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-281209"><label class="task-list-item-label" for="task-item-281209"> 能去西藏望一望</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8730258"><label class="task-list-item-label" for="task-item-8730258"> 在球场上能跑满全场不被换下</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-301425"><label class="task-list-item-label" for="task-item-301425"> 成为院队的一员</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-113996"><label class="task-list-item-label" for="task-item-113996"> 能和球队一起获得奖项</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9581138"><label class="task-list-item-label" for="task-item-9581138"> 成为足球队队长</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7828188"><label class="task-list-item-label" for="task-item-7828188"> 能去现场看一次国足比赛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4871424"><label class="task-list-item-label" for="task-item-4871424"> 能去奥体中心看一次重庆力帆比赛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7474693"><label class="task-list-item-label" for="task-item-7474693"> 能去看一次巴萨队的比赛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7888553"><label class="task-list-item-label" for="task-item-7888553"> 能跑完一次半马</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9693333"><label class="task-list-item-label" for="task-item-9693333"> 能学会游泳</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9074623"><label class="task-list-item-label" for="task-item-9074623"> 能去峨眉山（黄山）看一次日出</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8391761"><label class="task-list-item-label" for="task-item-8391761"> 能去大西北甘肃逛一逛</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-361589"><label class="task-list-item-label" for="task-item-361589"> 能去云南瞧一瞧</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8270326"><label class="task-list-item-label" for="task-item-8270326"> 能去西藏望一望</label></li>
 </ul>
 <h2 id="情感篇️️">情感篇❤️❤️</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3396402"><label class="task-list-item-label" for="task-item-3396402"> 遇见喜欢的人</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-944285"><label class="task-list-item-label" for="task-item-944285"> 谈一次恋爱</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6436865"><label class="task-list-item-label" for="task-item-6436865"> 遇见喜欢的人</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5169632"><label class="task-list-item-label" for="task-item-5169632"> 谈一次恋爱</label></li>
 </ul>
 <p>（没有谈恋爱后面的不好意思列出来了😂😂😂😂😂，等先谈恋爱再更下面的！）</p>
-<hr>
 <h2 id="总结">总结📃📃</h2>
 <h4 id="大一上-下">大一上、下：</h4>
 <p>因为这个网站是大一完了之后才建起来的，所以大一的总结就只能一次写了。首先真的感觉时间过得好快好快，不知不觉我就要成为大二了，我是学长了哈哈哈哈哈哈哈。不过仔细想想这一年，我距离我才进大学所想成为的自己还差得远呐，英语四级没过（虽然只考了一次），驾校没有学，没有自己一个人出远门旅游，没有能自己一个人</p>
@@ -435,9 +434,9 @@ _   下划线
 <p>这个要先转义一下-，否则会当成无序列表<br>
 显示结果：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-971080"><label class="task-list-item-label" for="task-item-971080"> 学习了高数</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3921353"><label class="task-list-item-label" for="task-item-3921353"> 写了博客</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-616107"><label class="task-list-item-label" for="task-item-616107"> 写了大物</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8695179"><label class="task-list-item-label" for="task-item-8695179"> 学习了高数</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3332009"><label class="task-list-item-label" for="task-item-3332009"> 写了博客</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6035713"><label class="task-list-item-label" for="task-item-6035713"> 写了大物</label></li>
 </ul>
 <h2 id="20总结">2.0.总结</h2>
 <p>原来网页上面的排版格式是这样写的啊！长见识了长见识了，哈哈哈。而这上面的就是我目前掌握的一些基本的常用的排版格式，还有好多高级用法我没有掌握呢😢😢。加油吧！至少现在写博客的格式我是掌握了哈哈哈哈。。。。。。😁😁😁😁😁😁</p>
