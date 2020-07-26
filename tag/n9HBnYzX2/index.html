@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="静态个人博客">
 <meta name="description" content="温故而知新。">
-<meta name="theme-color" content="#fff0f6">
-<title>YanBlog</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1593965837878">
-<link rel="stylesheet" href="/media/css/pisces.css">
+<meta name="theme-color" content="#f783ac">
+<title>iu❤yan</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1595748950055">
+<link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -58,7 +58,7 @@
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="pisces">
+<div class="gemini">
   <header class="header  ">
     <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
@@ -72,12 +72,12 @@
         <div class="site-title">
           
             <a href="/" class="brand">
-              <span>YanBlog</span>
+              <span>iu❤yan</span>
             </a>  
           
         </div>
         
-          <p class="subtitle">夏天的风 正暖暖吹过</p>
+          <p class="subtitle">不在任何东西面前失去自我，哪怕是教条，哪怕是别人的目光，哪怕是爱情。</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -192,7 +192,7 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout  gemini">
       <div class="section-layout-wrapper">
         <div id="sidebarMeta" class="sidebar">
     
@@ -212,33 +212,39 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">4</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">3</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
   </div>
   
     
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://iuyan.cn/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
   
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=547315660&amp;site=qq&amp;menu=yes">
+              <i class="fa fa-qq" title="Yan"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
   
 
 
@@ -252,7 +258,7 @@
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
+  let scheme = 'gemini';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -282,12 +288,24 @@
       
       
       
-      <a href="https://iuyan.cn/post/hello-gridea/">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://iuyan.cn/post/o3CXyYpjl/">
         <div class="motion-warpper">
           <div class="tag-post-node">
             <h1>
-              12-12
-              <small>Gridea</small>
+              07-05
+              <small>2020.7.5</small>
             </h1>
           </div>
         </div>
@@ -314,7 +332,7 @@
   </footer>
   
   
-  <div class="pisces back-to-top" id="back_to_top">
+  <div class="gemini back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
     <span class="scrollpercent">
@@ -325,45 +343,16 @@
   
   
   
+  <div class="bg-img">
+    <img src="/media/images/3.jpg" />
+  </div>
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <script>
-  let musics = JSON.parse('[]');
-  let mediaMusic = [];
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    mediaMusic.push({
-      name: item.musicName,
-      artist: item.author,
-      url: item.musicLink,
-      lrc: item.lrc,
-      cover: item.cover
-    });
-  }
-
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  window.addEventListener('load', function() {
-    let postBody = document.querySelector('#post_body');
-    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-    postBody && hs.forEach(h => {
-      let helems = postBody.querySelectorAll(h);
-      if (helems.length > 0) {
-        helems.forEach(elem => {
-          elem.id = encodeURI(elem.id);
-        })
-      }
-    })
-  })
-  </script>
+  
+  
+  
+  
+  <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="demo" m="1"></script>
 
 
   
@@ -495,7 +484,7 @@
   }
 
   // 链接跳转
-  let newWindow = 'true'
+  let newWindow = 'false'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -546,10 +535,452 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/11111/"" data-c="
-          &lt;pre&gt;&lt;code&gt;很久以前我都想着建一个自己的网站，终于在今天，我的第一个个人网站正式成立了哈哈哈哈哈😎😎😎。
-终于没有辜负我花了这么长时间学了这么久，虽然我用的还是别人的模板，但是，终究还是自己搭了一个网站，自豪哈哈哈哈😋😋。&lt;/code&gt;&lt;/pre&gt;
-">2020.7.5</a>
+        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/Llt23BO7C/"" data-c="
+          &lt;p&gt;今天，我的10天拉练生活到此结束了，在这10天我过得很充实，虽然很累，但是我并没有感到一丝后悔。&lt;/p&gt;
+&lt;p&gt;人的一生，就是要不断试错、不断改造。虽然这次拉练和我的专业没有一丝联系，我以后也并不想从事销售的道路，但是这次拉练却是的的确确的让我学到了很多，尤其是锻炼了我的脸皮，让我的胆量大大地增厚了好几倍😂😂&lt;/p&gt;
+&lt;p&gt;同时这也让我了解了现在就业的不容易，当我们走出舒适圈，真真切切的去访问许多门店的老板，才发现，疫情让线下门面本就遇到线上的冲击条件下，更难卖出自己的产品了，人们在消费时更加理性，这导致许许多多的门店都雪上加霜，许多店主都选择了倒闭关门，更多的店主选择了吃老本。&lt;/p&gt;
+&lt;p&gt;生活并不是只有糖甜米香，也有许多酸苦辛辣。以后的生活中，只有让自己有着更好的竞争力，我们才不会被淘汰，人生哪有什么一帆顺水，多的是荆棘巨浪。加油吧，少年！&lt;/p&gt;
+">拉练有感</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/tags/"" data-c="
+          &lt;h2 id=&#34;沮丧的一天&#34;&gt;沮丧的一天&lt;/h2&gt;
+&lt;p&gt;就是这样吧，坚持不下去了！❌❌❌&lt;br&gt;
+心累！&lt;br&gt;
+我多希望我也可以拥有多一点点啊！&lt;/p&gt;
+">心情日记</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/28ThX7U5u/"" data-c="
+          &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;进入大学之后，有着许多想做的事，有着许多想完成的目标，现在我就将他们陈列出来（这些目标都是暂时能想到的，以后再慢慢加，哈哈哈），希望在大学毕业的那一天，我可以回过头，瞧一瞧曾经所期望的自己，自己有没有做到。（每一学期更一次这篇博客）💪&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5178517&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5178517&#34;&gt; 代表着完成&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9477747&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9477747&#34;&gt; 代表着未完成&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- more --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;学习篇&#34;&gt;学习篇📖&lt;/h2&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3421419&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3421419&#34;&gt; 一个人去图书馆学习&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7118370&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7118370&#34;&gt; 拿一次一等奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5602458&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5602458&#34;&gt; 拿一次特等奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2548572&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2548572&#34;&gt; 拿一次国家奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-529951&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-529951&#34;&gt; 拿一次三好学生&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3704245&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3704245&#34;&gt; 成绩考一次班上第一&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8562849&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8562849&#34;&gt; 成绩考一次专业第一&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8508426&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8508426&#34;&gt; 参加一次省赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8238681&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8238681&#34;&gt; 拿一次省级奖&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3703600&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3703600&#34;&gt; 参加一次国赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8475308&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8475308&#34;&gt; 拿一次国奖&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6009025&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6009025&#34;&gt; 做一个贪吃蛇小游戏&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-67355&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-67355&#34;&gt; 做一个坦克大战小游戏&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9223608&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9223608&#34;&gt; 做一个网页&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-693671&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-693671&#34;&gt; 自己独立做一个网页主题&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4818417&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4818417&#34;&gt; 自己独立做一个小程序&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7074757&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7074757&#34;&gt; 考过英语四级&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3800358&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3800358&#34;&gt; 考过英语六级&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9080364&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9080364&#34;&gt; 成为党员&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3280563&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3280563&#34;&gt; 不挂科&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7523991&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7523991&#34;&gt; 学会驾照&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6088740&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6088740&#34;&gt; 能拆一次电脑然后自己将它装好&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1308234&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1308234&#34;&gt; 能去大公司实习&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4741353&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4741353&#34;&gt; 能考研成功&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;生活篇️&#34;&gt;生活篇⚽️&lt;/h2&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-144571&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-144571&#34;&gt; 在球场上能跑满全场不被换下&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3710754&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3710754&#34;&gt; 成为院队的一员&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9464072&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9464072&#34;&gt; 能和球队一起获得奖项&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8032875&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8032875&#34;&gt; 成为足球队队长&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1819164&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1819164&#34;&gt; 能去现场看一次国足比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9492087&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9492087&#34;&gt; 能去奥体中心看一次重庆力帆比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4082812&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4082812&#34;&gt; 能去看一次巴萨队的比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9344577&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9344577&#34;&gt; 能跑完一次半马&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7111097&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7111097&#34;&gt; 能学会游泳&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6112&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6112&#34;&gt; 能去峨眉山（黄山）看一次日出&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3849466&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3849466&#34;&gt; 能去大西北甘肃逛一逛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-925427&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-925427&#34;&gt; 能去云南瞧一瞧&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7436434&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7436434&#34;&gt; 能去西藏望一望&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;情感篇️️&#34;&gt;情感篇❤️❤️&lt;/h2&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2268322&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2268322&#34;&gt; 遇见喜欢的人&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-762143&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-762143&#34;&gt; 谈一次恋爱&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（没有谈恋爱后面的不好意思列出来了😂😂😂😂😂，等先谈恋爱再更下面的！）&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结📃📃&lt;/h2&gt;
+&lt;h4 id=&#34;大一上-下&#34;&gt;大一上、下：&lt;/h4&gt;
+&lt;p&gt;因为这个网站是大一完了之后才建起来的，所以大一的总结就只能一次写了。首先真的感觉时间过得好快好快，不知不觉我就要成为大二了，我是学长了哈哈哈哈哈哈哈。不过仔细想想这一年，我距离我才进大学所想成为的自己还差得远呐，英语四级没过（虽然只考了一次），驾校没有学，没有自己一个人出远门旅游，没有能自己一个人顶着一片天。&lt;/p&gt;
+">大学目标</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/bu7zwcfmG/"" data-c="
+          &lt;h1 id=&#34;1目录&#34;&gt;1.目录：&lt;/h1&gt;
+&lt;h2 id=&#34;11标题&#34;&gt;1.1.标题&lt;/h2&gt;
+&lt;h3 id=&#34;111-和-标记语法格式如下&#34;&gt;1.1.1.= 和 - 标记语法格式如下：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;我展示的是一级标题  
+============    
+我展示的是二级标题  
+---------------------  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;112使用-号标记&#34;&gt;1.1.2.使用 # 号标记&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;12段落格式&#34;&gt;1.2.段落格式&lt;/h2&gt;
+&lt;p&gt;段落的换行是使用两个以上空格加上回车。&lt;br&gt;
+当然也可以在段落后面使用一个空行来表示重新开始一个段落。&lt;/p&gt;
+&lt;h3 id=&#34;121字体&#34;&gt;1.2.1.字体&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;*斜体文本*
+_斜体文本_
+**粗体文本**
+__粗体文本__
+***粗斜体文本***
+___粗斜体文本___
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;1211字体更换&#34;&gt;1.2.1.1.字体更换&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;font face=&amp;quot;黑体&amp;quot;&amp;gt;我是黑体字&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1212大小更换&#34;&gt;1.2.1.2.大小更换&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;font face=&amp;quot;黑体&amp;quot; size=10&amp;gt;我是黑体字&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1213颜色更换&#34;&gt;1.2.1.3.颜色更换&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;font color=red size=72&amp;gt;颜色&amp;lt;/font&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1214文字居中&#34;&gt;1.2.1.4.文字居中&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;center&amp;gt;这一行需要居中&amp;lt;/center&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;122分隔线&#34;&gt;1.2.2.分隔线&lt;/h3&gt;
+&lt;p&gt;你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;***
+
+* * *
+
+*****
+
+- - -
+
+----------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;123删除线&#34;&gt;1.2.3.删除线&lt;/h3&gt;
+&lt;p&gt;如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GOOGLE.COM
+~~BAIDU.COM~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;br&gt;
+GOOGLE.COM&lt;br&gt;
+&lt;s&gt;BAIDU.COM&lt;/s&gt;&lt;/p&gt;
+&lt;h3 id=&#34;124下划线&#34;&gt;1.2.4.下划线&lt;/h3&gt;
+&lt;p&gt;下划线可以通过 HTML 的&lt;code&gt;&amp;lt;u&amp;gt;&lt;/code&gt; 标签来实现：&lt;br&gt;
+&lt;code&gt;&amp;lt;u&amp;gt;带下划线文本&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;br&gt;
+效果：&lt;br&gt;
+&lt;u&gt;带下划线文本&lt;/u&gt;&lt;/p&gt;
+&lt;h3 id=&#34;125脚注&#34;&gt;1.2.5.脚注&lt;/h3&gt;
+&lt;p&gt;脚注是对文本的补充说明。&lt;br&gt;
+Markdown 脚注的格式如下:&lt;br&gt;
+&lt;code&gt;[^要注明的文本]&lt;/code&gt;&lt;br&gt;
+例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;创建脚注格式类似这样 [^RUNOOB]。
+[^RUNOOB]:  学的不仅是技术，更是梦想！！！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;br&gt;
+创建脚注格式类似这样 &lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;13列表&#34;&gt;1.3.列表：&lt;/h2&gt;
+&lt;p&gt;Markdown 支持有序列表和无序列表。&lt;/p&gt;
+&lt;h3 id=&#34;131无序列表使用星号-加号或是减号-作为列表标记这些标记后面要添加一个空格然后再填写内容&#34;&gt;1.3.1.无序列表使用星号&lt;code&gt;(*)&lt;/code&gt;、加号&lt;code&gt;(+)&lt;/code&gt;或是减号&lt;code&gt;(-)&lt;/code&gt;作为列表标记，这些标记后面要添加一个空格，然后再填写内容：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;* 第一项
+* 第二项
+
++ 第一项
++ 第二项
+
+
+- 第一项
+- 第二项
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;132有序列表使用数字并加上-号来表示如&#34;&gt;1.3.2.有序列表使用数字并加上 . 号来表示，如：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;1. 第一项
+2. 第二项
+3. 第三项
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;133列表嵌套&#34;&gt;1.3.3.列表嵌套&lt;/h3&gt;
+&lt;p&gt;列表嵌套只需在子列表中的选项前面添加四个空格即可：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 第一项：
+    - 第一项嵌套的第一个元素
+    - 第一项嵌套的第二个元素
+2. 第二项：
+    - 第二项嵌套的第一个元素
+    - 第二项嵌套的第二个元素
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项：
+&lt;ul&gt;
+&lt;li&gt;第一项嵌套的第一个元素&lt;/li&gt;
+&lt;li&gt;第一项嵌套的第二个元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;第二项：
+&lt;ul&gt;
+&lt;li&gt;第二项嵌套的第一个元素&lt;/li&gt;
+&lt;li&gt;第二项嵌套的第二个元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;14-区块&#34;&gt;1.4. 区块&lt;/h2&gt;
+&lt;h3 id=&#34;141markdown-区块引用是在段落开头使用-符号-然后后面紧跟一个空格符号&#34;&gt;1.4.1Markdown 区块引用是在段落开头使用 &lt;code&gt;&amp;gt;&lt;/code&gt;符号 ，然后后面紧跟一个空格符号：&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; 区块引用&lt;/code&gt;&lt;br&gt;
+效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;区块引用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;另外区块是可以嵌套的，一个 &amp;gt; 符号是最外层，两个 &amp;gt; 符号是第一层嵌套，以此类推：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; 最外层
+&amp;gt; &amp;gt; 第一层嵌套
+&amp;gt; &amp;gt; &amp;gt; 第二层嵌套
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最外层&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一层嵌套&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第二层嵌套&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;142区块中使用列表&#34;&gt;1.4.2.区块中使用列表&lt;/h3&gt;
+&lt;p&gt;区块中使用列表实例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; 区块中使用列表
+&amp;gt; 1. 第一项
+&amp;gt; 2. 第二项
+&amp;gt; + 第一项
+&amp;gt; + 第二项
+&amp;gt; + 第三项
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;区块中使用列表&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;143列表中使用区块&#34;&gt;1.4.3.列表中使用区块&lt;/h3&gt;
+&lt;p&gt;如果要在列表项目内放进区块，那么就需要在&lt;code&gt;&amp;gt;&lt;/code&gt;前添加四个空格的缩进。&lt;br&gt;
+区块中使用列表实例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;* 第一项
+    &amp;gt; 学习
+    &amp;gt; 学的不仅是技术更是梦想
+* 第二项
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一项
+&lt;blockquote&gt;
+&lt;p&gt;学习&lt;br&gt;
+学的不仅是技术更是梦想&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;15代码&#34;&gt;1.5.代码&lt;/h2&gt;
+&lt;p&gt;如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`），例如：&lt;/p&gt;
+&lt;p&gt;` printf()`  函数&lt;/p&gt;
+&lt;p&gt;效果：&lt;br&gt;
+&lt;code&gt;printf()&lt;/code&gt; 函数&lt;/p&gt;
+&lt;h3 id=&#34;151代码区块&#34;&gt;1.5.1.代码区块&lt;/h3&gt;
+&lt;p&gt;代码区块使用 4 个空格或者一个制表符（Tab 键）&lt;/p&gt;
+&lt;p&gt;你也可以用 ``` 包裹一段代码，并指定一种语言（也可以不指定）：&lt;br&gt;
+&lt;code&gt;javascript $(document).ready(function () { alert(&#39;RUNOOB&#39;); });&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(document).ready(function () {
+    alert(&#39;RUNOOB&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;16markdown-链接&#34;&gt;1.6.Markdown 链接&lt;/h2&gt;
+&lt;h3 id=&#34;161链接使用方法如下&#34;&gt;1.6.1链接使用方法如下：&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[链接名称](链接地址)
+或者
+&amp;lt;链接地址&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;百度链接：[百度]（https://www.baidu.com）
+&amp;lt;https://www.baidu.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示结果如下：&lt;br&gt;
+百度链接： [百度]（https://www.baidu.com）&lt;br&gt;
+&lt;a href=&#34;https://www.baidu.com&#34;&gt;https://www.baidu.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;162高级链接&#34;&gt;1.6.2.高级链接&lt;/h3&gt;
+&lt;p&gt;我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这个链接用 1 作为网址变量 [Google][1]
+这个链接用 baidu 作为网址变量 [Baidu[baidu]
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://www.google.com/
+[baidu]: http://www.baidu.com/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示结果如下：&lt;/p&gt;
+&lt;p&gt;这个链接用 1 作为网址变量 &lt;a href=&#34;http://www.google.com/&#34;&gt;Google&lt;/a&gt;&lt;br&gt;
+这个链接用 baidu 作为网址变量 &lt;a href=&#34;http://www.baidu.com/&#34;&gt;Baidu&lt;/a&gt;&lt;br&gt;
+然后在文档的结尾为变量赋值（网址）&lt;/p&gt;
+&lt;h2 id=&#34;17-图片和链接使用方法基本差不多就是前面多了个&#34;&gt;1.7. 图片（和链接使用方法基本差不多，就是前面多了个 &lt;code&gt;!&lt;/code&gt;）&lt;/h2&gt;
+&lt;p&gt;Markdown 图片语法格式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![alt 属性文本](图片地址)
+![alt 属性文本](图片地址 &amp;quot;可选标题&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;开头一个感叹号 !&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着一个方括号，里面放上图片的替代文字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![图片](http://tupian.baike.com/ipad/ a1_05_00_01300000194285122188000535877_jpg.html &amp;quot;图片&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;效果：&lt;br&gt;
+&lt;img src=&#34;http://tupian.baike.com/ipad/a1_05_00_01300000194285122188000535877_jpg.html&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&amp;lt;--网图，侵权删！--&amp;gt;&lt;/p&gt;
+&lt;h2 id=&#34;17表格&#34;&gt;1.7.表格&lt;/h2&gt;
+&lt;p&gt;Markdown 制作表格使用 &lt;code&gt;|&lt;/code&gt;来分隔不同的单元格，使用 &lt;code&gt;-&lt;/code&gt; 来分隔表头和其他行。&lt;br&gt;
+语法格式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;th&gt;表头&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;td&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;我们可以设置表格的对齐方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-: 设置内容和标题栏居右对齐。&lt;/li&gt;
+&lt;li&gt;:- 设置内容和标题栏居左对齐。&lt;/li&gt;
+&lt;li&gt;:-: 设置内容和标题栏居中对齐。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;效果：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;左对齐&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;右对齐&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;居中对齐&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;单元格&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;单元格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;注：虽然没要求 - 的个数，但是尽量与文章对齐&lt;/p&gt;
+&lt;h2 id=&#34;18特殊符号处理&#34;&gt;1.8.特殊符号处理&lt;/h2&gt;
+&lt;p&gt;Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;19任务小清单&#34;&gt;1.9.任务小清单&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;空格[ ] 未勾选&lt;/li&gt;
+&lt;li&gt;空格[x] 内容 已勾选（这是小写x）&lt;br&gt;
+[]后面加空格再加内容&lt;br&gt;
+如：&lt;pre&gt;&lt;code&gt;- [x] 学习了高数
+- [x] 写了博客
+- [ ] 写了大物
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个要先转义一下-，否则会当成无序列表&lt;br&gt;
+显示结果：&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9216580&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9216580&#34;&gt; 学习了高数&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3010907&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3010907&#34;&gt; 写了博客&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4024134&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4024134&#34;&gt; 写了大物&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;20总结&#34;&gt;2.0.总结&lt;/h2&gt;
+&lt;p&gt;原来网页上面的排版格式是这样写的啊！长见识了长见识了，哈哈哈。而这上面的就是我目前掌握的一些基本的常用的排版格式，还有好多高级用法我没有掌握呢😢😢。加油吧！至少现在写博客的格式我是掌握了哈哈哈哈。。。。。。😁😁😁😁😁😁&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;知识的来源：&lt;br&gt;
+Radiantz博客&lt;a href=&#34;https://Radiantzy.github.io/post/markdown-grammar/&#34;&gt;https://Radiantzy.github.io/post/markdown-grammar/&lt;/a&gt;&lt;br&gt;
+菜鸟教程&lt;a href=&#34;https://www.runoob.com/markdown/md-advance.html&#34;&gt;https://www.runoob.com/markdown/md-advance.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr class=&#34;footnotes-sep&#34;&gt;
+&lt;section class=&#34;footnotes&#34;&gt;
+&lt;ol class=&#34;footnotes-list&#34;&gt;
+&lt;li id=&#34;fn1&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;学的不仅是技术，更是梦想！！！ &lt;a href=&#34;#fnref1&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+">markdown教程（简单版）</a>
       </div>
       
       <div class="item">
@@ -560,13 +991,16 @@
 &lt;h2 id=&#34;关于本站-记录生活记录成长记录学习的个人网站哈哈&#34;&gt;🏠 关于本站     记录生活，记录成长，记录学习的个人网站，哈哈😎&lt;/h2&gt;
 &lt;h2 id=&#34;博主是谁-博主当然是可爱帅气的小严同学&#34;&gt;👨‍💻 博主是谁    博主当然是可爱帅气的小严同学！😏&lt;/h2&gt;
 &lt;h2 id=&#34;兴趣爱好-足球-动漫-️&#34;&gt;⛹ 兴趣爱好     足球、动漫。⚽️&lt;/h2&gt;
-&lt;h2 id=&#34;联系我呀-嘻嘻&#34;&gt;📬 联系我呀    嘻嘻。😝&lt;/h2&gt;
 ">关于</a>
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/hello-gridea/"" data-c="
-          ">Gridea</a>
+        <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/o3CXyYpjl/"" data-c="
+          &lt;!-- more --&gt;
+&lt;p&gt;很久以前我都想着建一个自己的网站，终于在今天，我的第一个个人网站正式成立了哈哈哈哈哈😎😎😎。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;终于没有辜负我花了这么长时间学了这么久，虽然我用的还是别人的模板，但是，终究还是自己搭了一个网站，自豪哈哈哈哈😋😋。&lt;/p&gt;
+">2020.7.5</a>
       </div>
       
     </div>
@@ -851,6 +1285,13 @@
 
 </script>
 <script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
 
 
 <script src="/media/js/mouse/love.js"></script>
