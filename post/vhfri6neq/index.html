@@ -8,7 +8,7 @@
 <meta name="keywords" content="静态个人博客">
 <meta name="description" content="温故而知新。">
 <meta name="theme-color" content="#f783ac">
-<title>2020.7.5 | iu❤yan</title>
+<title>HTML（2） | iu❤yan</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1600152760518">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -52,8 +52,8 @@
 
 
 
-  <meta name="description" content="2020.7.5" />
-  <meta name="keywords" content="Gridea" />
+  <meta name="description" content="HTML（2）" />
+  <meta name="keywords" content="学习" />
 </head>
 
 <body>
@@ -359,8 +359,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://iuyan.cn/post/o3CXyYpjl/">
-      2020.7.5
+    <a class="post-title-link" href="https://iuyan.cn/post/vhfri6neq/">
+      HTML（2）
     </a>
   </h1>
   <div class="post-meta">
@@ -368,7 +368,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-07-05 18:54:59">2020-07-05</span>
+      <span class="publish-time" data-t="2020-09-15 13:02:33">2020-09-15</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -377,8 +377,8 @@
       <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
-      <a href="https://iuyan.cn/tag/n9HBnYzX2/">
-        <span>Gridea</span>
+      <a href="https://iuyan.cn/tag/学习/">
+        <span>学习</span>
       </a>
       
       
@@ -387,17 +387,17 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>10<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>91<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1935<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/o3CXyYpjl/" data-flag-title="2020.7.5" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/vhfri6neq/" data-flag-title="HTML（2）" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -406,10 +406,169 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <!-- more -->
-<p>很久以前我都想着建一个自己的网站，终于在今天，我的第一个个人网站正式成立了哈哈哈哈哈😎😎😎。</p>
-<!-- more -->
-<p>终于没有辜负我花了这么长时间学了这么久，虽然我用的还是别人的模板，但是，终究还是自己搭了一个网站，自豪哈哈哈哈😋😋。</p>
+              <h2>表格</h2>
+<h3>1.表格标签</h3>
+<pre><code>&lt;table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;20&quot; cellspacing=&quot;0&quot; width=&quot;500&quot; height=&quot;100&quot;&gt;
+    &lt;tr&gt;&lt;th&gt;姓名&lt;/th&gt; &lt;th&gt;性别&lt;/th&gt; &lt;th&gt;年龄&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;刘德华&lt;/td&gt; &lt;td&gt;男&lt;/td&gt; &lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;张学友&lt;/td&gt; &lt;td&gt;男&lt;/td&gt; &lt;td&gt;23&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;郭富城&lt;/td&gt; &lt;td&gt;男&lt;/td&gt; &lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;黎明&lt;/td&gt; &lt;td&gt;男&lt;/td&gt; &lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<p>1.其中table是用于定义表格的标签。<br>
+2.tr是用于定义表格中的行，必须嵌套在table标签中。<br>
+3.td标签是用于定义表格中的单元格，必须嵌套在tr标签中。<br>
+4.字母td指表格数据，即数据单元格的内容。<br>
+5.表头标签：th，会让文字加粗，必须嵌套在tr中。<br>
+6.align属性（left、center、right），规定表格相对周围元素的对齐方式。<br>
+7.border属性（1或者“”），规定表格单元格是否拥有边框，默认为“”，没有边框。<br>
+8.cellpadding（像素值），规定单元边沿与其内容之间的空白，默认为1像素。<br>
+9.cellspacing（像素值），默认为2像素。<br>
+10.width，height（像素或百分比），规定表格的宽度和高度。</p>
+<h3>2.表格结构</h3>
+<pre><code>&lt;thead&gt;&lt;/head&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+</code></pre>
+<p>thead是头部区域用于定义表格的头部，thead内部必须拥有tr标签，一般位于第一行。<br>
+tbody是主体区域，用于定义表格的主体，主要用于存放数据主体。</p>
+<h3>3.合并单元格</h3>
+<pre><code>&lt;table align=&quot;center&quot; border=&quot;1&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
+    &lt;thead&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;/th&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
+            
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>跨行合并：rowspan=“合并单元格的个数”<br>
+跨列合并：colspan=“合并单元格的个数”</p>
+<p><strong>合并单元格三部曲：</strong><br>
+1.确定是跨行还是跨列<br>
+2.找到目标单元格，写上合并方式=合并单元格数量。比如 <code>&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;</code>.<br>
+3.删除多余的单元格。<br>
+.</p>
+<h2>列表</h2>
+<pre><code> &lt;h4&gt;你喜欢的食物（无序列表）&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;榴莲&lt;/li&gt;
+        &lt;li&gt;臭豆腐&lt;/li&gt;
+        &lt;li&gt;鲱鱼罐头&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;h4&gt;粉丝排行版（有序列表）&lt;/h4&gt;
+    &lt;ol&gt;
+        &lt;li&gt;刘德华&lt;/li&gt;
+        &lt;li&gt;刘若英&lt;/li&gt;
+        &lt;li&gt;嘟嘟嘟&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;h4&gt;自定义列表&lt;/h4&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;关注我们&lt;/dt&gt;
+        &lt;dd&gt;新浪微博&lt;/dd&gt;
+        &lt;dd&gt;官方微信&lt;/dd&gt;
+        &lt;dd&gt;联系我们&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/div&gt;
+</code></pre>
+<p>无序列表ul：style=&quot;list-style-type:disc&quot;或style=&quot;list-style-type:circle&quot;或style=&quot;list-style-type:square&quot;，其中disc是圆点，circle是圆圈，square是正方形。 默认为disc。<br>
+有序列表ol：type=&quot;A&quot;或type=&quot;a&quot;或type=&quot;I&quot;或type=&quot;i&quot;或type=&quot;1&quot;，默认为type=“1”。</p>
+<p><strong>列表嵌套：</strong></p>
+<pre><code>&lt;h4&gt;嵌套列表：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea
+    &lt;ul&gt;
+    &lt;li&gt;Black tea&lt;/li&gt;
+    &lt;li&gt;Green tea
+        &lt;ul&gt;
+        &lt;li&gt;China&lt;/li&gt;
+        &lt;li&gt;Africa&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h2>表单标签</h2>
+在html中，一个完整的表单通常由表单域，表单控件（也称表单元素）和提示信息3个部分组成。
+<pre><code> &lt;form action=&quot;xxx.php&quot;&gt;
+    &lt;!-- text 文本框，用户可以里面输入任何文字 --&gt;
+    &lt;label for=&quot;text&quot;&gt;用户名：&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;请输入用户名&quot; id=&quot;text&quot;&gt;&lt;br&gt;
+    &lt;!-- password 密码框 用户看不见输入的密码 --&gt;
+    密码：&lt;input type=&quot;password&quot; name=&quot;password&quot; &gt;&lt;br&gt;
+    &lt;!-- radio 单选按钮 用户可以实现单选一 --&gt;
+    &lt;!-- name 是表单元素的名字 但是性别单选按钮必须有相同的名字name 才可以实现多选一 --&gt;
+    &lt;!-- 单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 --&gt;
+    性别：&lt;label for=&quot;nan&quot;&gt;男&lt;/label&gt; &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;nan&quot; value=&quot;男&quot;&gt; 
+    &lt;label for=&quot;nv&quot;&gt;女&lt;/label&gt; &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;nv&quot; value=&quot;女&quot;&gt;&lt;br&gt;
+    &lt;!-- checkbox 复选框 可以实现多选一 --&gt;
+    爱好：吃饭&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;吃饭&quot;&gt; 睡觉&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;睡觉&quot;&gt; 
+    打豆豆&lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; value=&quot;打豆豆&quot;&gt;
+    &lt;br&gt;
+    &lt;!-- 点击了提交按钮，可以把表单域form里面的表单元素里面的值提交给后台服务器 --&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;免费注册&quot;&gt;
+    &lt;!-- 重置按钮可以还原表单元素初始的默认状态 --&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;重新填写&quot;&gt;
+    &lt;!-- 普通按钮 后期结合js 搭配使用--&gt;
+    &lt;input type=&quot;button&quot; value=&quot;免费获取验证码&quot;&gt; &lt;br&gt;
+    &lt;!-- 文件域 使用场景：上传文件时使用的 --&gt;
+    上传头像：&lt;input type=&quot;file&quot;&gt;  
+&lt;/form&gt;
+</code></pre>
+<p>属性：<br>
+1.name由用户自己定义，定义input元素的名称，要求单选按钮和复选按钮要有相同的name值。是每个表单元素都有的属性值，主要给后台人员使用。<br>
+2.value由用户自己定义，规定input元素的值，是每个表单元素都有的属性值，主要给后台人员使用。<br>
+3.checked，规定input元素首次加载时应当被选中。<br>
+4.maxlength正整数，规定输入字段中的字符的最大长度。<br>
+<img src="https://iuyan.cn/post-images/1600151174293.jpg" alt="" loading="lazy"></p>
+<p><strong>label标签</strong><br>
+label标签为input的的定义标注，用于绑定一个表单元素，当点击label标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，用来增加用户体验。<br>
+语法：(for属性应当与相关元素的id属性相同)</p>
+<pre><code>&lt;label for=&quot;nan&quot;&gt;男&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;nan&quot;&gt;
+</code></pre>
+<p><strong>表单控件：</strong><br>
+下拉列表和文本域：（下拉列表中至少包含一对option）</p>
+<pre><code>&lt;form action=&quot;xxx.php&quot;&gt;
+     &lt;!-- select 下拉列表 --&gt;
+    籍贯：
+    &lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+        &lt;option value=&quot;&quot;&gt;山东&lt;/option&gt;
+        &lt;option value=&quot;&quot;&gt;重庆&lt;/option&gt;
+        &lt;option value=&quot;&quot;&gt;北京&lt;/option&gt;
+        &lt;option value=&quot;&quot; selected=&quot;selected&quot;&gt;请选择籍贯&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;
+    &lt;!-- textarea 文本域 --&gt;
+    网站介绍：&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;10&quot; rows=&quot;2&quot;&gt;此网站用于xxxx&lt;/textarea&gt;
+&lt;/form&gt;
+</code></pre>
 
             </div>
             
@@ -422,7 +581,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://iuyan.cn/post/o3CXyYpjl/" title="2020.7.5">https://iuyan.cn/post/o3CXyYpjl/</a>
+      <a href="https://iuyan.cn/post/vhfri6neq/" title="HTML（2）">https://iuyan.cn/post/vhfri6neq/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -431,18 +590,18 @@
   </ul>
   <div class="tags">
     
-      <a href="https://iuyan.cn/tag/n9HBnYzX2/"># Gridea</a>
+      <a href="https://iuyan.cn/tag/学习/"># 学习</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="markdown教程（简单版）" href="https://iuyan.cn/post/bu7zwcfmG/">markdown教程（简单版）</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="markdown教程（简单版）" href="https://iuyan.cn/post/bu7zwcfmG/">上一篇</a>
-      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="HTML（1）" href="https://iuyan.cn/post/iOrHwRlAE/">HTML（1）</a>
+        <a class="nav-mobile-next" title="HTML（1）" href="https://iuyan.cn/post/iOrHwRlAE/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
