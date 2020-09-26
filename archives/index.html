@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新。">
 <meta name="theme-color" content="#f783ac">
 <title>iu❤yan</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1600154245653">
+<link rel="shortcut icon" href="/favicon.ico?v=1601108668404">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -620,6 +620,155 @@
         <a class="result-title" style="opacity: 0;" href="https://iuyan.cn/post/04aoKscx5/"" data-c="
           &lt;p&gt;学完HTML后当然要开始学习css啦，不然页面好丑😬这是关于css的第一篇基础内容，主要包含有选择器、font家族、text家族、文本缩进、行间距等。&lt;/p&gt;
 &lt;!-- more --&gt;
+&lt;h3&gt;css基础选择器&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;标签选择器：
+&lt;ul&gt;
+&lt;li&gt;作用：可以选出所有相同的标签，比如p&lt;/li&gt;
+&lt;li&gt;特点：不能差异化选择&lt;/li&gt;
+&lt;li&gt;用法：p { color: red;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;类选择器
+&lt;ul&gt;
+&lt;li&gt;作用：可以选出一个或多个标签&lt;/li&gt;
+&lt;li&gt;特点：可以根据需求选择&lt;/li&gt;
+&lt;li&gt;用法：.nav {color: red;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;id选择器
+&lt;ul&gt;
+&lt;li&gt;作用：一次只能选择一个标签&lt;/li&gt;
+&lt;li&gt;特点：ID属性只能在每个HTML文档中出现一次&lt;/li&gt;
+&lt;li&gt;用法：#nav {color: red;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通配符选择器
+&lt;ul&gt;
+&lt;li&gt;作用：选择所有的标签&lt;/li&gt;
+&lt;li&gt;特点：选择的太多，有部分不需要&lt;/li&gt;
+&lt;li&gt;用法：* {color: red;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;字体属性（font家族）&lt;/h3&gt;
+fonts（字体）属性用于定义字体系列、大小、粗细和文本样式（如斜体）。&lt;br /&gt;
+&lt;strong&gt;font-family设置字体系列&lt;/strong&gt;
+&lt;pre&gt;&lt;code&gt;p {
+    font-family: &#39;微软雅黑&#39;;
+}
+或者
+div {
+    font-family: &#39;宋体&#39;,&#39;Microsoft Yahei&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;各种字体之间必须使用英文状态下的逗号隔开&lt;/li&gt;
+&lt;li&gt;一般情况下，如果有空格隔开的多个单词组成的字体，加引号&lt;/li&gt;
+&lt;li&gt;尽量使用系统默认自带字体，保证在任何用户的浏览器中都能正确显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;font-size设置字体大小&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p {
+    font-size: 20px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;px(像素)大小是我们网页的最常用的单位&lt;/li&gt;
+&lt;li&gt;谷歌浏览器默认的文字大小是16px&lt;/li&gt;
+&lt;li&gt;不同浏览器可能默认显示的字号大小不一致，我们尽量给一个明确值大小，不要默认大小&lt;/li&gt;
+&lt;li&gt;可以给body指定整个页面文字的大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;font-weight设置字体粗细&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p {
+    font-weight: bold;
+}
+或者
+p {
+    font-weight: 500;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;normal：默认值，不加粗的&lt;/li&gt;
+&lt;li&gt;bold：定义加粗&lt;/li&gt;
+&lt;li&gt;100-900:400等同于norma，而700等同于bold，注意这个数字后面不跟单位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;font-style设置文本的风格&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p {
+    font-style: normal;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;normal:默认值，浏览器会显示标准的字体样式，如：font-style: normal;&lt;/li&gt;
+&lt;li&gt;italic:浏览器会显示斜体的字体样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;字体复合属性&lt;/strong&gt;&lt;br&gt;
+字体属性可以把以上文字样式综合来写，这样更节约代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;body {
+    font: font-style font-weight font-size/line-height font-family;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;使用font属性时，必须按上面语法格式中的顺序书写，不能更换顺序，并且各个属性间用空格隔开&lt;/li&gt;
+&lt;li&gt;不需要设置的属性可以省略（取默认值），但必须保留font-size和font-family两个属性,否则font属性将不再起作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;text文本属性&lt;/h3&gt;
+text（文本）属性可定义文本的外观，比如文本的颜色，文本对齐、装饰文本、文本缩进、行间距等。&lt;br /&gt;
+&lt;strong&gt;文本颜色 color&lt;/strong&gt;
+用来定义文本的颜色
+&lt;pre&gt;&lt;code&gt;p {
+    color: red;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;预定义的颜色值：red、blue、pink等&lt;/li&gt;
+&lt;li&gt;十六进制：#FF0000、#FF6600等&lt;/li&gt;
+&lt;li&gt;RGB代码：rgb（255,0,0）等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;文本对齐 text-align&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;div {
+    text-align: center;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;left:左对齐（默认值）&lt;/li&gt;
+&lt;li&gt;right:右对齐&lt;/li&gt;
+&lt;li&gt;center:居中对齐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;文本装饰 text-decoration&lt;/strong&gt;&lt;br&gt;
+text-decoration属性规定添加到文本的装饰，可以给文本添加下划线、删除线、上划线等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;div {
+    text-decoration: underline;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;none：默认，没有装饰线&lt;/li&gt;
+&lt;li&gt;underline：下划线。链接a自带下划线&lt;/li&gt;
+&lt;li&gt;overline：上划线&lt;/li&gt;
+&lt;li&gt;line-through：删除线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;文本缩进 text-indent&lt;/strong&gt;&lt;br&gt;
+text-indent属性用来指定文本的第一行的缩进，通常是将段落的首行缩进。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;div {
+    text-indent: 10px;
+}
+或者
+span {
+    text-indent: 2em;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;em是一个相对单位，就是当前元素（font-size）一个文字的大小，如果当前元素没有设置大小，则会按照父元素的一个文字大小。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;行间距 line-height&lt;/strong&gt;&lt;br&gt;
+line-height属性用于设置行间的距离（行高），可以控制文字行与行之间的距离&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;p {
+    line-height: 26px;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;间距分为上间距、下间距、文本高度，上间距=下间距=（line-height减去文本高度）/2&lt;/li&gt;
+&lt;li&gt;文本高度=文字大小&lt;/li&gt;
+&lt;/ul&gt;
 ">CSS3(1)</a>
       </div>
       
@@ -905,58 +1054,58 @@ target用于指定链接页面的打开方式，其中_self为默认值，_blank
           &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;进入大学之后，有着许多想做的事，有着许多想完成的目标，现在我就将他们陈列出来（这些目标都是暂时能想到的，以后再慢慢加，哈哈哈），希望在大学毕业的那一天，我可以回过头，瞧一瞧曾经所期望的自己，自己有没有做到。（每一学期更一次这篇博客）💪&lt;/p&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4723436&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4723436&#34;&gt; 代表着完成&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5642996&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5642996&#34;&gt; 代表着未完成&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1247236&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1247236&#34;&gt; 代表着完成&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5542970&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5542970&#34;&gt; 代表着未完成&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- more --&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;学习篇&#34;&gt;学习篇📖&lt;/h2&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7306450&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7306450&#34;&gt; 一个人去图书馆学习&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-95061&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-95061&#34;&gt; 拿一次一等奖学金&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1410414&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1410414&#34;&gt; 拿一次特等奖学金&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9928852&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9928852&#34;&gt; 拿一次国家奖学金&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9786183&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9786183&#34;&gt; 拿一次三好学生&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1925460&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1925460&#34;&gt; 成绩考一次班上第一&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8658440&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8658440&#34;&gt; 成绩考一次专业第一&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-648220&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-648220&#34;&gt; 参加一次省赛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9794337&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9794337&#34;&gt; 拿一次省级奖&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6974988&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6974988&#34;&gt; 参加一次国赛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7889170&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7889170&#34;&gt; 拿一次国奖&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2441044&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2441044&#34;&gt; 做一个贪吃蛇小游戏&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8763316&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8763316&#34;&gt; 做一个坦克大战小游戏&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4689948&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4689948&#34;&gt; 做一个网页&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1208687&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1208687&#34;&gt; 自己独立做一个网页主题&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6439945&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6439945&#34;&gt; 自己独立做一个小程序&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9207157&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9207157&#34;&gt; 考过英语四级&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9288872&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9288872&#34;&gt; 考过英语六级&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-571230&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-571230&#34;&gt; 成为党员&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-255532&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-255532&#34;&gt; 不挂科&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3017394&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3017394&#34;&gt; 学会驾照&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2755994&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2755994&#34;&gt; 能拆一次电脑然后自己将它装好&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6438750&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6438750&#34;&gt; 能去大公司实习&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4385977&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4385977&#34;&gt; 能考研成功&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6474517&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6474517&#34;&gt; 一个人去图书馆学习&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7420321&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7420321&#34;&gt; 拿一次一等奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4228600&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4228600&#34;&gt; 拿一次特等奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8824070&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8824070&#34;&gt; 拿一次国家奖学金&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6684665&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6684665&#34;&gt; 拿一次三好学生&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7237666&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7237666&#34;&gt; 成绩考一次班上第一&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-533455&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-533455&#34;&gt; 成绩考一次专业第一&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6377501&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6377501&#34;&gt; 参加一次省赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5134787&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5134787&#34;&gt; 拿一次省级奖&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6359478&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6359478&#34;&gt; 参加一次国赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7280495&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7280495&#34;&gt; 拿一次国奖&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9506769&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9506769&#34;&gt; 做一个贪吃蛇小游戏&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6893538&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6893538&#34;&gt; 做一个坦克大战小游戏&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4171761&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4171761&#34;&gt; 做一个网页&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9062717&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9062717&#34;&gt; 自己独立做一个网页主题&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6229648&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6229648&#34;&gt; 自己独立做一个小程序&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1800901&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1800901&#34;&gt; 考过英语四级&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-524721&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-524721&#34;&gt; 考过英语六级&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7232596&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7232596&#34;&gt; 成为党员&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-535072&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-535072&#34;&gt; 不挂科&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3024674&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3024674&#34;&gt; 学会驾照&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1862682&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1862682&#34;&gt; 能拆一次电脑然后自己将它装好&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3206967&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3206967&#34;&gt; 能去大公司实习&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2445923&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2445923&#34;&gt; 能考研成功&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;生活篇️&#34;&gt;生活篇⚽️&lt;/h2&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1455076&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1455076&#34;&gt; 在球场上能跑满全场不被换下&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9279312&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9279312&#34;&gt; 成为院队的一员&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5131290&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5131290&#34;&gt; 能和球队一起获得奖项&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7683674&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7683674&#34;&gt; 成为足球队队长&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1938669&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1938669&#34;&gt; 能去现场看一次国足比赛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3353329&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3353329&#34;&gt; 能去奥体中心看一次重庆力帆比赛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6495984&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6495984&#34;&gt; 能去看一次巴萨队的比赛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-345226&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-345226&#34;&gt; 能跑完一次半马&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8869487&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8869487&#34;&gt; 能学会游泳&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7733440&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7733440&#34;&gt; 能去峨眉山（黄山）看一次日出&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-180330&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-180330&#34;&gt; 能去大西北甘肃逛一逛&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7033297&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7033297&#34;&gt; 能去云南瞧一瞧&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3874753&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3874753&#34;&gt; 能去西藏望一望&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5389840&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5389840&#34;&gt; 在球场上能跑满全场不被换下&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9744563&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9744563&#34;&gt; 成为院队的一员&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9505749&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9505749&#34;&gt; 能和球队一起获得奖项&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3779101&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3779101&#34;&gt; 成为足球队队长&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-828215&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-828215&#34;&gt; 能去现场看一次国足比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4122262&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4122262&#34;&gt; 能去奥体中心看一次重庆力帆比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2015552&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2015552&#34;&gt; 能去看一次巴萨队的比赛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4185099&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4185099&#34;&gt; 能跑完一次半马&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8131122&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8131122&#34;&gt; 能学会游泳&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9686506&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9686506&#34;&gt; 能去峨眉山（黄山）看一次日出&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2689552&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2689552&#34;&gt; 能去大西北甘肃逛一逛&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1265755&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1265755&#34;&gt; 能去云南瞧一瞧&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5643578&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5643578&#34;&gt; 能去西藏望一望&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;情感篇️️&#34;&gt;情感篇❤️❤️&lt;/h2&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1806136&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1806136&#34;&gt; 遇见喜欢的人&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7459208&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7459208&#34;&gt; 谈一次恋爱&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9646232&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9646232&#34;&gt; 遇见喜欢的人&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3087533&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3087533&#34;&gt; 谈一次恋爱&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;（没有谈恋爱后面的不好意思列出来了😂😂😂😂😂，等先谈恋爱再更下面的！）&lt;/p&gt;
 &lt;h2 id=&#34;总结&#34;&gt;总结📃📃&lt;/h2&gt;
@@ -1311,9 +1460,9 @@ _   下划线
 &lt;p&gt;这个要先转义一下-，否则会当成无序列表&lt;br&gt;
 显示结果：&lt;/p&gt;
 &lt;ul class=&#34;contains-task-list&#34;&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6593674&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6593674&#34;&gt; 学习了高数&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-971488&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-971488&#34;&gt; 写了博客&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4691616&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4691616&#34;&gt; 写了大物&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3853039&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3853039&#34;&gt; 学习了高数&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9914177&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9914177&#34;&gt; 写了博客&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6901464&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6901464&#34;&gt; 写了大物&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;20总结&#34;&gt;2.0.总结&lt;/h2&gt;
 &lt;p&gt;原来网页上面的排版格式是这样写的啊！长见识了长见识了，哈哈哈。而这上面的就是我目前掌握的一些基本的常用的排版格式，还有好多高级用法我没有掌握呢😢😢。加油吧！至少现在写博客的格式我是掌握了哈哈哈哈。。。。。。😁😁😁😁😁😁&lt;/p&gt;
